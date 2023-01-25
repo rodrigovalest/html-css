@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table {
+        width: 500px;
+        border-collapse: collapse;
+    }
+
+    td, th {
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    thead, tfoot {
+        background-color: black;
+        color: white;
+    }
+
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+        border: 1px solid black;
+    }
+
+    tbody > tr:nth-child(odd) {
+        background-color: lightgray;
+    }
+
+    thead > tr > th {
+        position: sticky;
+        top: -1px;
+        background-color: black;
+    }
+</style>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- ANATOMIA PARA TABELAS GRANDES 
+        TABLE
+            CAPTION
+            THEAD
+                tr, td, th
+            TBODY
+                tr, td, th
+            TFOOT
+                tr, td, th
+    -->
+    <table>
+        <caption>Siglas e população total de todos os estados federativos do Brasil.</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">Sigla</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Acre</td>
+                <td>AC</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td>AL</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td>AP</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td>AM</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>BH</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>CE</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td>ES</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td>GO</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td>MA</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td>MT</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td>MS</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>MG</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td>PA</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td>PB</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>PR</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>PE</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td>PI</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>RJ</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td>RN</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>RS</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td>RO</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td>RR</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>SC</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td>SE</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td>TO</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td>DF</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td scope="roll">Total de habitantes</td>
+                <td scope="col">210 147 125</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus minus quidem corrupti quibusdam dolores possimus sit, voluptas in maxime porro, quasi esse reprehenderit harum nihil, reiciendis corporis odit accusamus? Ipsa. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur ratione tenetur aliquam, iusto voluptatibus expedita! Facilis sunt minus tempore dicta assumenda dolores rerum harum perferendis consectetur laudantium, eos neque accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eaque saepe ab corporis autem quia beatae, sed, quam maiores id aspernatur provident eius a earum possimus magnam qui laboriosam et? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate amet modi odit tempore sunt. Eum quis debitis error veniam, dolores ducimus architecto, earum voluptatum, facilis iusto mollitia tempora repudiandae? Aliquid! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit in facere repudiandae nobis possimus? Possimus similique fugiat atque rem, enim, explicabo voluptate temporibus beatae quod saepe architecto corrupti quam reprehenderit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi deserunt vel illum, voluptatibus tempore magnam nesciunt odit earum alias delectus unde similique aspernatur aliquam suscipit nulla quos ea neque optio?</p> 
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus minus quidem corrupti quibusdam dolores possimus sit, voluptas in maxime porro, quasi esse reprehenderit harum nihil, reiciendis corporis odit accusamus? Ipsa. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur ratione tenetur aliquam, iusto voluptatibus expedita! Facilis sunt minus tempore dicta assumenda dolores rerum harum perferendis consectetur laudantium, eos neque accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eaque saepe ab corporis autem quia beatae, sed, quam maiores id aspernatur provident eius a earum possimus magnam qui laboriosam et? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate amet modi odit tempore sunt. Eum quis debitis error veniam, dolores ducimus architecto, earum voluptatum, facilis iusto mollitia tempora repudiandae? Aliquid! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit in facere repudiandae nobis possimus? Possimus similique fugiat atque rem, enim, explicabo voluptate temporibus beatae quod saepe architecto corrupti quam reprehenderit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi deserunt vel illum, voluptatibus tempore magnam nesciunt odit earum alias delectus unde similique aspernatur aliquam suscipit nulla quos ea neque optio?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus minus quidem corrupti quibusdam dolores possimus sit, voluptas in maxime porro, quasi esse reprehenderit harum nihil, reiciendis corporis odit accusamus? Ipsa. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur ratione tenetur aliquam, iusto voluptatibus expedita! Facilis sunt minus tempore dicta assumenda dolores rerum harum perferendis consectetur laudantium, eos neque accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eaque saepe ab corporis autem quia beatae, sed, quam maiores id aspernatur provident eius a earum possimus magnam qui laboriosam et? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate amet modi odit tempore sunt. Eum quis debitis error veniam, dolores ducimus architecto, earum voluptatum, facilis iusto mollitia tempora repudiandae? Aliquid! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit in facere repudiandae nobis possimus? Possimus similique fugiat atque rem, enim, explicabo voluptate temporibus beatae quod saepe architecto corrupti quam reprehenderit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi deserunt vel illum, voluptatibus tempore magnam nesciunt odit earum alias delectus unde similique aspernatur aliquam suscipit nulla quos ea neque optio?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus minus quidem corrupti quibusdam dolores possimus sit, voluptas in maxime porro, quasi esse reprehenderit harum nihil, reiciendis corporis odit accusamus? Ipsa. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur ratione tenetur aliquam, iusto voluptatibus expedita! Facilis sunt minus tempore dicta assumenda dolores rerum harum perferendis consectetur laudantium, eos neque accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eaque saepe ab corporis autem quia beatae, sed, quam maiores id aspernatur provident eius a earum possimus magnam qui laboriosam et? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate amet modi odit tempore sunt. Eum quis debitis error veniam, dolores ducimus architecto, earum voluptatum, facilis iusto mollitia tempora repudiandae? Aliquid! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit in facere repudiandae nobis possimus? Possimus similique fugiat atque rem, enim, explicabo voluptate temporibus beatae quod saepe architecto corrupti quam reprehenderit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi deserunt vel illum, voluptatibus tempore magnam nesciunt odit earum alias delectus unde similique aspernatur aliquam suscipit nulla quos ea neque optio?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus minus quidem corrupti quibusdam dolores possimus sit, voluptas in maxime porro, quasi esse reprehenderit harum nihil, reiciendis corporis odit accusamus? Ipsa. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur ratione tenetur aliquam, iusto voluptatibus expedita! Facilis sunt minus tempore dicta assumenda dolores rerum harum perferendis consectetur laudantium, eos neque accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eaque saepe ab corporis autem quia beatae, sed, quam maiores id aspernatur provident eius a earum possimus magnam qui laboriosam et? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate amet modi odit tempore sunt. Eum quis debitis error veniam, dolores ducimus architecto, earum voluptatum, facilis iusto mollitia tempora repudiandae? Aliquid! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit in facere repudiandae nobis possimus? Possimus similique fugiat atque rem, enim, explicabo voluptate temporibus beatae quod saepe architecto corrupti quam reprehenderit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi deserunt vel illum, voluptatibus tempore magnam nesciunt odit earum alias delectus unde similique aspernatur aliquam suscipit nulla quos ea neque optio?</p>
+</body>
+</html>
