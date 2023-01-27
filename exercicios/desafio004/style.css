@@ -2,40 +2,67 @@
 
 * {
     margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-
-    background-color: black;
-    background-image: url("imagens/fundo-madeira.jpg");
-    background-position: center bottom;
+    background: black url("imagens/fundo-madeira.jpg") center center no-repeat fixed;
     background-size: cover;
 }
 
-#caixa-teste {
-    background-color: darkolivegreen;
+/* ------------------------------------------------------ */
+
+#iphone {
+    background-image: url("imagens/frame-iphone.png");
+    background-size: cover;
     width: 300px;
+    height: 605px;
+
+    position: absolute; /* position: relative estava gerando dificuldade para deixar o telefone ao lado dos ícones */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#iframe {
     height: 450px;
+    width: 255px;
 
     position: relative;
     left: 50%;
     top: 50%;
 
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -49.5%);
 }
 
-#caixinha {
-    background-color: blue;
+/* ------------------------------------------------------ */
+
+#icones > a > img {
     width: 50px;
     height: 50px;
-    position: relative;
-    margin: 0px;
+    border-radius: 50%;
+    box-shadow: 1px 1px black;
+
+    margin: 10px 15px 0px 0px;
 }
 
-nav, div {
-    display: inline-block;
-    /* Arrumar a nav de pé no canto direito sem ter margin (e sem usar flex) */
-    /* O professor usa <br> para quebrar a linha e text-align: right; */
+#icones > a > img:hover{
+    width: 60px;
+    height: 60px;
+    transition: 0.07s;
+}
+
+#icones {
+    text-align: right;
 }
