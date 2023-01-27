@@ -37,4 +37,5 @@ body {
 nav, div {
     display: inline-block;
     /* Arrumar a nav de pé no canto direito sem ter margin (e sem usar flex) */
+    /* O professor usa <br> para quebrar a linha e text-align: right; */
 }
