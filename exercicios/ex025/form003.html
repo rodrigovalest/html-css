@@ -14,8 +14,17 @@
             <input type="text" name="nome" id="inome" required maxlength="50" placeholder="Nome completo">
         </p>
         <p>
-            <label for="imedia">Média</label>
+            <label for="imedia">Média: </label>
             <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" required>
+        </p>
+        <p>
+            <label for="iemail">E-mail: </label>
+            <input type="email" name="email" id="iemail" required placeholder="example@example">
+        </p>
+        <p>
+            <label for="itel">Telefone: </label>
+            <input type="tel" name="tel" id="itel" required pattern="^[0-9]{4}-[0-9]{4}$">
+            <!-- Estudar sobre RegEx -->
         </p>
         <p>
             <input type="submit" value="Enviar">
