@@ -1,1 +1,7 @@
 @charset "UTF-8";
+
+body {
+    background-image: url("C:/Users/rodri/Documents/programacao/html-css/exercicios/ex026/imagens/cev-portrait.jpg");
+    background-size: cover;
+    background-position: left center;
+}
