@@ -21,6 +21,7 @@ html, body {
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(to top, var(--cor4), var(--cor3), var(--cor2));
+    position: relative;
 }
 
 /* ----------------------------------------------- */
@@ -30,23 +31,24 @@ section#all {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+
+    width: 500px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 div#img {
-    width: 300px;
-    height: 366px;
+    height: 500px;
     background-color: black;
-    border-radius: 15px 15px 0px 0px;
 
     background: var(--cor1) url('../imagens/im700px.jpg') no-repeat;
     background-size: cover;
+    background-position: bottom center;
 }
 
 div#info {
     background-color: white;
-    width: 280px;
     padding: 10px 10px 10px 10px;
-    border-radius: 0px 0px 15px 15px;
 }
 
 /* ----------------------------------------------- */
@@ -78,20 +80,22 @@ div#info > form#formul {
 }
 
 input#iemail {
-    width: 220px;
+    width: 410px;
+    padding-left: 5px;
     height: 26px;
     transform: translateY(-8.5px);
 }
 
 input#isenha {
-    width: 220px;
+    width: 410px;
+    padding-left: 5px;
     height: 26px;
     transform: translateY(-8.5px);
 }
 
 input#entrar {
     height: 49px;
-    width: 280px;
+    width: 480px;
     border-color: var(--cor1);
     border-style: solid;
     background-color: var(--cor1);
@@ -108,7 +112,7 @@ input#entrar:hover {
 
 input#esqueci {
     height: 49px;
-    width: 280px;
+    width: 480px;
     border-width: 1px;
     border-radius: 5px;
     border-color: var(--cor1);

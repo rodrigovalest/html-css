@@ -16,13 +16,7 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) { 
-    div#img {
-        border-radius: 15px 0px 0px 15px;
-        display: inline-block;
-    }
-
-    div#info {
-        border-radius: 0px 15px 15px 0px;
-        display: inline-block;
+    section#all {
+        width: 90%;
     }
 }
