@@ -1,1 +1,28 @@
 @charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --cor0: #1C2326;
+    --cor1: #BF895A;
+    --cor2: #80B4BF;
+    --cor3: #B0D1D9;
+    --cor4: #E4F1F2;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--cor0);
+}
+
+section {
+    display: inline-block;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, var(--cor4), var(--cor3), var(--cor2));
+}
