@@ -11,18 +11,111 @@
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: 'Quicksand', sans-serif;
     color: var(--cor0);
-}
-
-section {
-    display: inline-block;
 }
 
 html, body {
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(to top, var(--cor4), var(--cor3), var(--cor2));
+}
+
+/* ----------------------------------------------- */
+
+section#all {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#img {
+    width: 300px;
+    height: 366px;
+    background-color: black;
+    border-radius: 15px 15px 0px 0px;
+
+    background: var(--cor1) url('../imagens/im700px.jpg') no-repeat;
+    background-size: cover;
+}
+
+div#info {
+    background-color: white;
+    width: 280px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+/* ----------------------------------------------- */
+
+section > div#info > h1 {
+    text-align: center;
+    margin-bottom: 10px;    
+}
+
+div#info > form#formul {
+    margin-top: 15px;
+}
+
+#icons {
+    color: white;
+    background-color: var(--cor1);
+    font-size: 1.85em;
+}
+
+#icons:hover {
+    cursor: pointer;
+}
+
+.campo {
+    background-color: var(--cor1);
+    padding: 10px 10px 0px 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+input#iemail {
+    width: 220px;
+    height: 26px;
+    transform: translateY(-8.5px);
+}
+
+input#isenha {
+    width: 220px;
+    height: 26px;
+    transform: translateY(-8.5px);
+}
+
+input#entrar {
+    height: 49px;
+    width: 280px;
+    border-color: var(--cor1);
+    border-style: solid;
+    background-color: var(--cor1);
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+input#entrar:hover {
+    background-color: #f3ae72;
+    border-color: #f3ae72;
+}
+
+input#esqueci {
+    height: 49px;
+    width: 280px;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: var(--cor1);
+    border-style: solid;
+    cursor: pointer;
+}
+
+input#esqueci:hover {
+    background-color: #bbc6c7;
 }

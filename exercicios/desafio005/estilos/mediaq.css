@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: #1C2326;
+    --cor1: #BF895A;
+    --cor2: #80B4BF;
+    --cor3: #B0D1D9;
+    --cor4: #E4F1F2;
+}
+
+@media screen and (max-width: 768px) {
+    html, body {
+        background-image: none;
+        background-color: #80B4BF;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { 
+    div#img {
+        border-radius: 15px 0px 0px 15px;
+        display: inline-block;
+    }
+
+    div#info {
+        border-radius: 0px 15px 15px 0px;
+        display: inline-block;
+    }
+}
