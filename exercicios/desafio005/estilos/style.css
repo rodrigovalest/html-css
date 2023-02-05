@@ -35,6 +35,9 @@ section#all {
     width: 500px;
     border-radius: 20px;
     overflow: hidden;
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 }
 
 div#img {

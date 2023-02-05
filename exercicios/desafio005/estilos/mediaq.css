@@ -18,5 +18,59 @@
 @media screen and (min-width: 768px) and (max-width: 992px) { 
     section#all {
         width: 90%;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    div#img {
+        float: left;
+        width: 30%;
+        height: 326px;
+    }
+
+    div#info {
+        float: left;
+        width: 60%;
+        border-radius: 0px 20px 20px 0px; 
+    }
+
+    input#iemail, input#isenha {
+        width: 89%;
+    }
+
+    input#entrar, input#esqueci {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) { 
+    section#all {
+        width: 895px;
+    }
+
+    div#img {
+        float: right;
+        height: 322px;
+    }
+
+    div#info {
+        float: right;
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    div#info, div#img {
+        width: 436px;
+    }
+
+    div#info > p {
+        font-size: 0.9em;
+    }
+
+    input#iemail, input#isenha {
+        width: 87%;
+    }
+
+    input#entrar, input#esqueci {
+        width: 100%;
     }
 }
